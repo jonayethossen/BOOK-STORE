@@ -1,24 +1,37 @@
 import React from "react";
+import { NavLink } from "react-router";
 
 const Navbar = () => {
   const links = (
     <>
       <li>
-        <a className="hover:text-[#00a86b] transition-colors">Home</a>
+        <NavLink to={"/"} className="hover:text-[#00a86b] transition-colors">
+          Home
+        </NavLink>
       </li>
       <li>
-        <a className="hover:text-[#00a86b] transition-colors">Farming Guides</a>
+        <NavLink
+          to={"/Catalogue"}
+          className="hover:text-[#00a86b] transition-colors"
+        >
+          Catalogue
+        </NavLink>
       </li>
       <li>
-        <a className="hover:text-[#00a86b] transition-colors">Crop Details</a>
+        <NavLink
+          to={"/Gallery"}
+          className="hover:text-[#00a86b] transition-colors"
+        >
+          Gallery
+        </NavLink>
       </li>
       <li>
-        <a className="hover:text-[#00a86b] transition-colors">
-          Pest control Strategies
-        </a>
-      </li>
-      <li>
-        <a className="hover:text-[#00a86b] transition-colors">Contact</a>
+        <NavLink
+          to={"/Members"}
+          className="hover:text-[#00a86b] transition-colors"
+        >
+          Members
+        </NavLink>
       </li>
     </>
   );
@@ -57,7 +70,8 @@ const Navbar = () => {
           </div>
           {/* Brand Logo/Title */}
           <a className="btn btn-ghost text-xl font-extrabold tracking-tighter text-[#00a86b]">
-            AGRICULTURAL<span className="text-white">INFO</span>
+            <span className="text-[#00a86b]">BOOK</span>
+            <span className="text-white">STORE</span>
           </a>
         </div>
 
@@ -68,11 +82,11 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end gap-2">
-          <a className="btn btn-ghost btn-sm hidden md:flex text-gray-400">
+          <a className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6">
             Login
           </a>
           <a className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6">
-            Contribute
+            Sign Up
           </a>
         </div>
       </div>
