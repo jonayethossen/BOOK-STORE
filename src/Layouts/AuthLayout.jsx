@@ -1,3 +1,9 @@
+import Login from "../Components/Login";
+
 export default function AuthLayout() {
-  return <div></div>;
+  return (
+    <div>
+      <Login />
+    </div>
+  );
 }

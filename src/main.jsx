@@ -4,6 +4,7 @@ import "./index.css";
 import { createBrowserRouter, Router, RouterProvider } from "react-router";
 import RootLayout from "./Layouts/RootLayout";
 import HomePage from "./Pages/HomePage";
+import Login from "./Components/Login";
 
 const router = createBrowserRouter([
   {
@@ -20,10 +21,10 @@ const router = createBrowserRouter([
     path: "/login",
     element: <Login />,
   },
-  {
-    path: "/register",
-    element: <Register />,
-  },
+  // {
+  //   path: "/register",
+  //   element: <Register />,
+  // },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>

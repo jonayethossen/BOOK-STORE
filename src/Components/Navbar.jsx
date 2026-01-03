@@ -82,12 +82,18 @@ const Navbar = () => {
         </div>
 
         <div className="navbar-end gap-2">
-          <a className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6">
+          <NavLink
+            to={"/login"}
+            className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6"
+          >
             Login
-          </a>
-          <a className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6">
+          </NavLink>
+          <NavLink
+            to={"/register"}
+            className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6"
+          >
             Sign Up
-          </a>
+          </NavLink>
         </div>
       </div>
     </div>
