@@ -11,7 +11,7 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/Catalogue"}
+          to={"/catalogue"}
           className="hover:text-[#00a86b] transition-colors"
         >
           Catalogue
@@ -19,18 +19,18 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
-          to={"/Gallery"}
+          to={"/register"}
           className="hover:text-[#00a86b] transition-colors"
         >
-          Gallery
+          Registration
         </NavLink>
       </li>
       <li>
         <NavLink
-          to={"/Members"}
+          to={"/login"}
           className="hover:text-[#00a86b] transition-colors"
         >
-          Members
+          Login
         </NavLink>
       </li>
     </>
@@ -69,7 +69,7 @@ const Navbar = () => {
             </ul>
           </div>
           {/* Brand Logo/Title */}
-          <a className="btn btn-ghost text-xl font-extrabold tracking-tighter text-[#00a86b]">
+          <a className="btn btn-ghost text-xl font-extrabold hidden md:block tracking-tighter text-[#00a86b]">
             <span className="text-[#00a86b]">BOOK</span>
             <span className="text-white">STORE</span>
           </a>
@@ -81,7 +81,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="navbar-end gap-2">
+        {/* <div className="navbar-end gap-2">
           <NavLink
             to={"/login"}
             className="btn bg-[#00a86b] hover:bg-[#008f5a] border-none text-white btn-sm px-6"
@@ -94,7 +94,7 @@ const Navbar = () => {
           >
             Sign Up
           </NavLink>
-        </div>
+        </div> */}
       </div>
     </div>
   );

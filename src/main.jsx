@@ -5,6 +5,8 @@ import { createBrowserRouter, Router, RouterProvider } from "react-router";
 import RootLayout from "./Layouts/RootLayout";
 import HomePage from "./Pages/HomePage";
 import Login from "./Components/Login";
+import CataloguePage from "./Pages/CatalogePage";
+import Register from "./Pages/RegistrationPage";
 
 const router = createBrowserRouter([
   {
@@ -15,19 +17,23 @@ const router = createBrowserRouter([
         index: true,
         element: <HomePage />,
       },
+      {
+        path: "/catalogue",
+        Component: CataloguePage,
+      },
     ],
   },
   {
     path: "/login",
     element: <Login />,
   },
-  // {
-  //   path: "/register",
-  //   element: <Register />,
-  // },
+  {
+    path: "/register",
+    element: <Register />,
+  },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <RouterProvider router={router} />
-  </StrictMode>
+  </StrictMode>,
 );
