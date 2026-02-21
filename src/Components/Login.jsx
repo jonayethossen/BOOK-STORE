@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router";
-// আপনার এগ্রিকালচার রিলেটেড কোনো ইমেজ এখানে ইম্পোর্ট করুন
+
 import LoginBg from "../assets/photo2.jpg";
 
 export default function Login() {
