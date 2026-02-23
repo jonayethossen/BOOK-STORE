@@ -25,7 +25,7 @@ const MemberFeedback = () => {
       <div className="max-w-6xl mx-auto bg-white shadow-2xl rounded-sm p-8 md:p-12 border border-gray-100">
         {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-slate-800 mb-10">
-          Member's feedback
+          {/* Member's feedback */}
         </h2>
         {/* Feedback Cards Grid */}
 
